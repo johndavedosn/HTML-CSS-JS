@@ -1,0 +1,59 @@
+.Form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 500px;
+
+}
+.Form h1{
+    animation: a1 2s infinite;
+}
+
+@keyframes a1{
+    0%{color: transparent;}
+    50%{color: white;}
+    100%{color: transparent;}
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.Form label{
+    color: yellow;
+    animation: a2 3s infinite;
+}
+@keyframes a2{
+    0%{color: yellow;}
+    50%{color: red;}
+    100%{color: yellow;}
+}
+.Form button{
+    background-color: yellow;
+    cursor: pointer;
+    animation: a3 3s infinite;
+}
+@keyframes a3{
+    0%{background-color: yellow;}
+    50%{background-color: red;}
+    100%{background-color: yellow;}
+}
+.Form button:hover{
+    width: 250px;
+    height: 50px;
+}
+.Form input:hover{
+    width: 200px;
+    height: 29px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
