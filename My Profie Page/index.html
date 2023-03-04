@@ -5,11 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .hdr1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    color: black;
+}
+.hdr1 a {
+    text-decoration: none;
+    color: blue;
+    padding-left: 20px;
+}
+.title {
+    padding-top: 50px;
+}
 
+strong {
+    color: red;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.smp {
+    background-color: red;
+    width: 100px;
+    border: 1.7px solid blue;
+}
+.smp a {
+    padding-left: 10px;
+}
+.Note {
+    background-color: rgb(169, 169, 97);
+    color: black;
+    width: 300px;
+}
+.myprojects a{
+    text-decoration: none;
+}
+.pbl {
+    background-color: gray;
+    height: 150px;
+    width: 100%;
+    color: black;
+}
+.rb {
+    background-color: green;
+    cursor: pointer;
+    border: 1.7px dotted black;
+}
+.rb:hover {
+    background-color: darkgreen;
+}
+
+.sgf {
+    background-color: gray;
+    height: 150px;
+    width: 100%;
+    color: black;
+    margin-top: 20px;
+}
+.rb3 {
+        background-color: green;
+    cursor: pointer;
+    border: 1.7px dotted black;
+}
+.rb3:hover {
+    background-color: darkgreen;
+}
+
+    </style>
 </head>
-<body>
+<body id="body">
+    
     <header class="hdr1" id="hdr1">
         <h1>Ali moumen</h1>
         <nav>
@@ -18,14 +94,17 @@
             <a href="#myprojects">My Projects</a>
         </nav>
     </header><center>
+
     <div class="aboutme" id="aboutme">
+       
         <h1 class="title">Ali moumen's official page</h1>
         <p>
             This page is the Ali moumen's official profile page <br>
             <strong>Full Name : </strong> Ali Moumen <br>
             <strong>Page : </strong> alimoumen.000webhost.com <br>
-            <strong>age : </strong> 15 
-            
+            <strong>age : </strong> 15 <br> <br>
+            <button class="rb3" onclick="DarkTheme()" type="button">Dark Mode</button><br> <br>
+            <button class="rb3"  onclick="LightTheme()" type="button">  Light Mode</button>
 
         </p>  
     </div><br><br>
@@ -43,7 +122,7 @@
          a strong potential for a career in the field.
     </p>
     <h1>What is my Goal ?</h1>
-    <p>
+    <p> 
         My goal is to create an innovation or breakthrough in the 
         field of Information Technology that has a 
         significant and lasting impact on the 
@@ -54,7 +133,7 @@
         achieving this goal, I hope to leave a mark on IT 
         history and establish Myself as a pioneer and thought leader in the field, 
         cementing My name as a part of the industry's rich legacy.
-    </p>
+    </p> <hr>
     <div class="contactme" id="contactme">
         <h1>Lets Contact !</h1>
         <strong>
@@ -99,6 +178,46 @@
                  <button class="rb" id="rb2">See Project</button>
             </p>
         </div>
-    <script defer src="main.js"></script>
+        <div class="sgf">
+            <h1>This Website itself</h1>
+            <p>
+                This <strong>Profile page</strong> itself is <br>
+                one of my project and its will be <strong>updated soon !</strong><br><br>
+                <button class="rb" id="rb3">See Project</button>
+            </p>
+        </div>
+    <script defer >
+        var rb = document.getElementById("rb");
+function Redirect(url) {
+    window.location.href = url 
+}
+var body = document.getElementById("body")
+function DarkTheme() {
+
+        body.style.backgroundColor = "black"
+        body.style.color = "white"
+    
+
+}
+function LightTheme() {
+
+        body.style.backgroundColor = "white"
+        body.style.color = "black"
+    
+
+}
+rb.addEventListener("click", () => {
+    Redirect("https://github.com/johndavedosn/Python-Packages/tree/main/Python-Based-Language")
+})
+var rb2 = document.getElementById("rb2")
+rb2.addEventListener("click", () => {
+    Redirect("https://github.com/johndavedosn/HTML-CSS-JS/tree/main/Sign%20In%20Form")
+})
+var rb3 = document.getElementById("rb3")
+rb3.addEventListener("click", () => {
+    Redirect("https://github.com/johndavedosn/HTML-CSS-JS/tree/main/My%20Profie%20Page")
+})
+
+    </script>
 </body>
 </html>
