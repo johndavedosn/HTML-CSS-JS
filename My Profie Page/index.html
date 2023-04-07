@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ali moumen's site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .hdr1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: aqua;
     position: fixed;
     width: 100%;
@@ -19,6 +19,16 @@
     left: 0;
     height: 50px;
     color: black;
+    border-radius: 9px;
+}
+.fb {
+    background-color: blue;
+    color :black;
+    border:1.7px solid gray;
+}
+.fb:hover {
+    background-color: darkblue;
+    
 }
 .hdr1 a {
     text-decoration: none;
@@ -34,6 +44,9 @@ strong {
 }
 p {
     font-family: 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration:none;
 }
 .smp {
     background-color: red;
@@ -72,6 +85,7 @@ p {
     width: 100%;
     color: black;
     margin-top: 20px;
+    border: 1.7px solid white;
 }
 .rb3 {
         background-color: green;
@@ -81,6 +95,55 @@ p {
 .rb3:hover {
     background-color: darkgreen;
 }
+h1 {
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+@keyframes a1 {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: transparent;
+  }
+}
+ @media screen and (max-width: 600px) {
+            .hdr1 {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .hdr1 a {
+                display: block;
+                padding: 10px 0;
+                text-align: center;
+            }
+            
+            .title {
+                padding-top: 100px;
+            }
+            
+            .aboutme, .contactme {
+                padding: 30px;
+            }
+            
+            .smp {
+                width: 80px;
+            }
+        }
+    .p1 {
+        font-family: "Helvetica", Arial, sans-serif;
+    }
 
     </style>
 </head>
@@ -88,17 +151,13 @@ p {
     
     <header class="hdr1" id="hdr1">
         <h1>Ali moumen</h1>
-        <nav>
-            <a href="#aboueme">About me</a>
-            <a href="#contactme">Contact me</a>
-            <a href="#myprojects">My Projects</a>
-        </nav>
+
     </header><center>
 
     <div class="aboutme" id="aboutme">
        
         <h1 class="title">Ali moumen's official page</h1>
-        <p>
+        <p class="p1"><hr>
             This page is the Ali moumen's official profile page <br>
             <strong>Full Name : </strong> Ali Moumen <br>
             <strong>Page : </strong> alimoumen.000webhost.com <br>
@@ -106,10 +165,10 @@ p {
             <button class="rb3" onclick="DarkTheme()" type="button">Dark Mode</button><br> <br>
             <button class="rb3"  onclick="LightTheme()" type="button">  Light Mode</button>
 
-        </p>  
+        
     </div><br><br>
     <h1>Who is Ali moumen ?</h1>
-    <p>
+    <p class="p1">
         I am Ali Moumen, a 15-year-old 
         living in Casablanca, Morocco. I have a
          passion for IT and have demonstrated My 
@@ -122,7 +181,7 @@ p {
          a strong potential for a career in the field.
     </p>
     <h1>What is my Goal ?</h1>
-    <p> 
+    <p class="p1"> 
         My goal is to create an innovation or breakthrough in the 
         field of Information Technology that has a 
         significant and lasting impact on the 
@@ -151,7 +210,7 @@ p {
                   target="_blank"> 
                     <i class="fa fa-youtube"></i></a>
             </div>
-    </div>
+    </div><hr>
     <div class="myprojects" id="myprojects">
         <h1>My Projects</h1>
         <div class="Note">
@@ -186,6 +245,15 @@ p {
                 <button class="rb" id="rb3">See Project</button>
             </p>
         </div>
+        <div class="sgf">
+            <h1>A science website</h1>
+            <p>
+                I am working now on a <strong>science learning
+                Site</strong> <br> for my science teacher
+            </p>
+            <button class="rb" id="rb4">See Project</button>
+        </div><br><br>
+        <a href="https://forms.gle/LwRcAqFCcoyQ4dRy5" class="fb" >Feed back me ! </a>
     <script defer >
         var rb = document.getElementById("rb");
 function Redirect(url) {
@@ -217,7 +285,10 @@ var rb3 = document.getElementById("rb3")
 rb3.addEventListener("click", () => {
     Redirect("https://github.com/johndavedosn/HTML-CSS-JS/tree/main/My%20Profie%20Page")
 })
-
+var rb4 = document.getElementById("rb4")
+rb4.addEventListener("click", () => {
+    Redirect("https://github.com/johndavedosn/HTML-CSS-JS/tree/main/SVT%20site")
+})
     </script>
 </body>
 </html>
