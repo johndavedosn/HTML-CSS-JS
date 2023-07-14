@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>SVT avec soufian</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    /* Define the style for the header */
+    header {
+      background-color: cyan;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 50px; /* Increase the height to accommodate the content */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.7px solid black;
+    }
+
+    /* Default styles for all screen sizes */
+    .title {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 80px;
+      font-size: 32px;
+    }
+
+    .p1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color: #333;
+    }
+
+    /* Styles for screens 992px and larger */
+    @media screen and (min-width: 992px) {
+      .title {
+        margin-top: 150px;
+        margin-bottom: 100px;
+        font-size: 48px;
+      }
+
+      .p1 {
+        font-size: 24px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+
+      .wwo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+      }
+    }
+
+    /* Styles for screens 768px and larger */
+    @media screen and (max-width: 991px) {
+      .title {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        font-size: 32px;
+      }
+
+      .p1 {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .wwo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+      }
+    }
+
+    /* Styles for screens smaller than 768px */
+    @media screen and (max-width: 767px) {
+      .title {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 24px;
+      }
+
+      .p1 {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .wwo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .sec {
+      background-color: gray;
+      border: 1.7px solid black;
+      height: 300px;
+      cursor: pointer;
+      flex: 1;
+      margin: 10px;
+    }
+
+    .sec:hover {
+      background-color: darkgray;
+    }
+
+    .sl {
+      text-decoration: none;
+    }
+
+    .sl:hover {
+      background-color: aquamarine;
+      color: white;
+    }
+
+    .strt {
+      width: 200px;
+      margin: 0 auto; /* Center the element horizontally */
+      border: 1.7px solid black;
+      border-radius: 20px;
+      background-color: gold;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: black;
+      padding: 20px;
+      color: white;
+      margin-left: 0;
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>SVT avec soufiane</h1>
+</header>
+<div class="page" id="page">
+  <strong>
+    <h1 class="title">تعلم علوم الحياة والأرض للدورة الثانوية مع الأستاذ: سفيان هلال</h1>
+  </strong>
+  <p class="p1">
+    Ce site met à la disposition des futurs 
+    bacheliers la documentation et l'aide 
+    pédagogiques en SVT, dont ils ont besoin
+    , selon le programme officiel du secondaire
+     qualifiant marocain, option BIOF 
+     (Bac international option langue française).
+      Le site et la documentation sont en "responsive design" 
+      (adaptation à tout type d'écran).
+      Du cours, des fiches de révision, 
+      des sujets du BAC en SVT ainsi que des 
+      exercices, inédits, jamais posés aux examens 
+      précédents.
+    <hr>
+  </p>
+</div>
+
+<div class="wwo" id="wwo">
+  <div class="sec" id="sec">
+    <center>
+      <h1>Exercises</h1>
+      <p>
+        Avez des exercises du soutien <br>
+        dans le SVT pour tester votre <br>
+        connaisence
+      </p>
+      <img src="icon.png" alt="exercises ">
+    </center>
+  </div>
+  <div class="sec" id="sec">
+    <center>
+      <h1>Leçons</h1>
+      <p>
+        Avez des leçons du SVT expliqué <br>
+        avec une bonne maniére
+      </p>
+      <img src="icon2.png" alt="leçons" width="100" height="100">
+    </center>
+  </div>
+  <div class="sec" id="sec">
+    <center>
+      <h1>Exams</h1>
+      <p>
+        Avez des réél exams pour vous préparer <br>
+        à vos exams
+      </p>
+      <img src="icon3.png" alt="exams" width="100" height="100">
+    </center>
+  </div>
+  <div class="sec" id="sec">
+    <center>
+      <h1>Videos</h1>
+      <p>
+        Avez des vidéos pour expliquer les leçons du <br>
+        SVT
+      </p>
+      <img src="icon4.png" alt="video" width="100" height="100">
+    </center>
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+<div class="strt" id="strt">
+  <center>
+    <h2>Commencer maintenant</h2>
+    <p>
+      Prendre les cours de SVT avec <br>
+      <strong>Professeur Hilal!</strong><br><br>
+      <a href="contact.html" class="sl" target="_blank">Commencer Maintenant</a>
+    </p>
+  </center>
+</div>
+
+<br><br>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Hilal Academy. All rights reserved.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
